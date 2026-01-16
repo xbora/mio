@@ -16,7 +16,7 @@ Authorization: Bearer <workos_user_id or jwt_token>
 
 Supports two authentication methods:
 1. WorkOS user_id (format: `user_*`)
-2. WorkOS OAuth JWT token.
+2. WorkOS OAuth JWT token
 
 ---
 
