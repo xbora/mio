@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500&display=swap');
+
+.pageWrapper {
+  min-height: 100vh;
+  background-color: #faf8f5;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #3d3530;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e8e2da;
+  border-radius: 16px;
+  padding: 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e8e2da;
+}
+
+.navLinks {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navButton {
+  display: inline-block;
+  background: transparent;
+  color: #3d3530;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.navButton:hover {
+  background: #f5f2ed;
+}
+
+.navButtonActive {
+  background: #c17f59;
+  color: #fff;
+}
+
+.navButtonActive:hover {
+  background: #a86c4a;
+}
+
+.mainContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.mainContentTop {
+  justify-content: flex-start;
+  text-align: left;
+  align-items: stretch;
+}
+
+.heading {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+  color: #c17f59;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.headingSmall {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #3d3530;
+  margin-bottom: 0.5rem;
+}
+
+.subheading {
+  font-size: 1.1rem;
+  color: #6b5c4c;
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: #c17f59;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background: #a86c4a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(193, 127, 89, 0.25);
+}
+
+.secondaryButton {
+  display: inline-block;
+  background: #f5f2ed;
+  color: #3d3530;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid #e8e2da;
+  cursor: pointer;
+}
+
+.secondaryButton:hover {
+  background: #e8e2da;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.sectionHeading {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #3d3530;
+  margin-bottom: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formRow {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.formLabel {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #3d3530;
+  min-width: 120px;
+}
+
+.formInput {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e8e2da;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #3d3530;
+  background: #faf8f5;
+  transition: border-color 0.2s ease;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #c17f59;
+}
+
+.formInput:read-only {
+  background: #f5f2ed;
+  color: #6b5c4c;
+  cursor: default;
+}
+
+.accessTokenSection {
+  margin-top: 1.5rem;
+}
+
+.accessTokenLabel {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #3d3530;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.accessTokenWrapper {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.accessTokenInput {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e8e2da;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: monospace;
+  color: #6b5c4c;
+  background: #f5f2ed;
+}
+
+.copyButton {
+  background: #c17f59;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copyButton:hover {
+  background: #a86c4a;
+}
+
+.phoneSection {
+  background: #faf8f5;
+  border: 1px solid #e8e2da;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.phoneSectionHeading {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #3d3530;
+  margin-bottom: 0.5rem;
+}
+
+.phoneSectionDescription {
+  font-size: 0.95rem;
+  color: #6b5c4c;
+  margin-bottom: 1rem;
+}
+
+.phoneInputWrapper {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.phoneInput {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e8e2da;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #3d3530;
+  background: #fff;
+  transition: border-color 0.2s ease;
+}
+
+.phoneInput:focus {
+  outline: none;
+  border-color: #c17f59;
+}
+
+.saveButton {
+  background: #c17f59;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.saveButton:hover {
+  background: #a86c4a;
+}
+
+.saveButton:disabled {
+  background: #d4a574;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  color: #5a8a5a;
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+}
+
+.errorMessage {
+  color: #c45a5a;
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+}
+
+.footerWrapper {
+  margin-top: 2rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .card {
+    padding: 1.25rem;
+  }
+  
+  .header {
+    padding: 1rem;
+  }
+  
+  .navLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navButton {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .formRow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  
+  .formLabel {
+    min-width: auto;
+  }
+  
+  .phoneInputWrapper {
+    flex-direction: column;
+  }
+  
+  .accessTokenWrapper {
+    flex-direction: column;
+  }
+  
+  .buttonGroup {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .ctaButton,
+  .secondaryButton {
+    width: 100%;
+    text-align: center;
+  }
+}

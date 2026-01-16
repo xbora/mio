@@ -1,0 +1,32 @@
+create table public.users (
+  id uuid not null default extensions.uuid_generate_v4 (),
+  workos_user_id text not null,
+  email text not null,
+  name text null,
+  first_name text null,
+  last_name text null,
+  created_at timestamp with time zone null default now(),
+  updated_at timestamp with time zone null default now(),
+  whatsapp_number text null,
+  memkit_workos_user_id text null,
+  current_weight numeric(5, 2) null,
+  goal_weight numeric(5, 2) null,
+  weekly_loss_goal numeric(3, 2) null default 2.0,
+  daily_calorie_goal integer null default 2000,
+  arca_workos_user_id text null,
+  ai_username text null,
+  ai_name text null,
+  stripe_customer_id text null,
+  stripe_subscription_id text null,
+  subscription_status text null,
+  constraint users_pkey primary key (id),
+  constraint users_arca_workos_user_id_key unique (arca_workos_user_id),
+  constraint users_email_key unique (email),
+  constraint users_memkit_workos_user_id_key unique (memkit_workos_user_id),
+  constraint users_stripe_customer_id_key unique (stripe_customer_id),
+  constraint users_whatsapp_number_key unique (whatsapp_number),
+  constraint users_ai_username_key unique (ai_username),
+  constraint users_workos_user_id_key unique (workos_user_id)
+) TABLESPACE pg_default;
+
+create index IF not exists idx_users_subscription_status on public.users using btree (subscription_status) TABLESPACE pg_default;

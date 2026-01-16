@@ -1,0 +1,52 @@
+{
+  "name": "next-authkit-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "reset": "rm -rf node_modules && rm -rf .next && npm i",
+    "start-local-dev": "rm -rf .next && npm run prepare && npm run dev",
+    "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepare": "relative-deps"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^2.0.50",
+    "@ai-sdk/mcp": "^0.0.11",
+    "@ai-sdk/react": "^2.0.104",
+    "@anthropic-ai/sdk": "^0.37.0",
+    "@radix-ui/react-icons": "^1.3.2",
+    "@radix-ui/themes": "^3.2.1",
+    "@scalar/api-reference-react": "^0.8.15",
+    "@supabase/supabase-js": "^2.76.1",
+    "@types/pg": "^8.15.5",
+    "@vitejs/plugin-react": "^5.1.2",
+    "@workos-inc/authkit-nextjs": "^2.1.0",
+    "ai": "^5.0.104",
+    "libphonenumber-js": "^1.12.17",
+    "next": "^15.2.3",
+    "pg": "^8.16.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-markdown": "^10.1.0",
+    "recharts": "^3.5.1",
+    "remark-gfm": "^4.0.1",
+    "resend": "^6.6.0",
+    "stripe": "^20.0.0",
+    "twilio": "^5.9.0",
+    "vitest": "^4.0.16"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5",
+    "relative-deps": "^1.0.7",
+    "typescript": "5.9.3"
+  },
+  "relativeDependencies": {}
+}
